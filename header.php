@@ -39,7 +39,7 @@
             <li class="user-realname">Aldo Latino</li>
             <li class="username"><i class="fa fa-twitter"></i>@<a href="https://twitter.com/aldolat">aldolat</a></li>
             <li class="username"><i class="fa fa-github-alt"></i>@<a href="https://github.com/aldolat">aldolat</a></li>
-            <li class="username"><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/aldo.latino">aldo.latino</a></li>
+            <li class="username"><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/aldolatino">aldolatino</a></li>
             <li class="user-loc"><i class="fa fa-map-marker"></i>Augusta, IT</li>
             <li class="user-url"><i class="fa fa-link"></i><a href="http://www.aldolat.it">www.aldolat.it</a></li>
             <li class="user-url"><i class="fa fa-link"></i><a href="http://tweets.aldolat.it">tweets.aldolat.it</a></li>
