@@ -49,3 +49,9 @@
     </div>
 </div>
 <!-- END #user -->
+
+<?php
+// If you set up static pages for posts and front page, display links. See the comment in file stream_toggle.php
+if( get_option( 'page_for_posts' ) )
+    get_template_part( 'stream_toggle' );
+?>
