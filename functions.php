@@ -68,3 +68,68 @@ function otat_month_archives() {
     }
 }
 
+/**
+ * Aggiunge la favicon.
+ * 
+ * Favicon e codice HTML generato da http://realfavicongenerator.net/
+ */
+function tweets_favicon() {
+?>
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://tweets.aldolat.it/pub/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="http://tweets.aldolat.it/pub/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://tweets.aldolat.it/pub/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://tweets.aldolat.it/pub/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://tweets.aldolat.it/pub/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://tweets.aldolat.it/pub/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http://tweets.aldolat.it/pub/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://tweets.aldolat.it/pub/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://tweets.aldolat.it/pub/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="http://tweets.aldolat.it/pub/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="http://tweets.aldolat.it/pub/favicons/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="http://tweets.aldolat.it/pub/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="http://tweets.aldolat.it/pub/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="http://tweets.aldolat.it/pub/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="http://tweets.aldolat.it/pub/favicons/manifest.json">
+<link rel="shortcut icon" href="http://tweets.aldolat.it/pub/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="msapplication-TileImage" content="http://tweets.aldolat.it/pub/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="http://tweets.aldolat.it/pub/favicons/browserconfig.xml">
+<meta name="theme-color" content="#08a5e1">
+
+<?php }
+add_action( 'wp_head', 'tweets_favicon' );
+
+/**
+ * Aggiunge Google Analytics
+ */
+function aldolat_analytics() { ?>
+
+<!-- Theme's function.php | Function: aldolat_analytics() -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-396229-10', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script>
+<!-- / Theme's function.php -->
+
+<?php }
+//add_action( 'wp_footer', 'aldolat_analytics' );
+
+/**
+ * Aggiunge lo script per la Cookie Law nel footer.
+ * @see https://cookie-script.com
+ */
+function aldolat_cookie_consent() {
+    $output = "\n" . '<!--Start Cookie Script-->
+    <script type="text/javascript" charset="UTF-8" src="http://chs02.cookie-script.com/s/403a65b8e7139b91b2d4d0877eb5eef7.js"></script>
+    <!--End Cookie Script-->' . "\n\n";
+    echo $output;
+}
+//add_action( 'wp_footer', 'aldolat_cookie_consent' );
