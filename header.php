@@ -43,7 +43,6 @@
             <li class="user-loc"><i class="fa fa-map-marker"></i>Augusta, IT</li>
             <li class="user-url"><i class="fa fa-link"></i><a href="http://www.aldolat.it">www.aldolat.it</a></li>
             <li class="user-url"><i class="fa fa-link"></i><a href="http://tweets.aldolat.it">tweets.aldolat.it</a></li>
-            <li class="user-url"><i class="fa fa-link"></i><a href="http://bookmarks.aldolat.it">bookmarks.aldolat.it</a></li>
             <li class="user-url"><i class="fa fa-link"></i><a href="http://dev.aldolat.it">dev.aldolat.it</a></li>
         </ul>
     </div>
